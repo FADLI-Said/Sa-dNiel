@@ -1,0 +1,38 @@
+[
+	{
+		"com_id" : 1,
+		"pro_id" : 10,
+		"pro_nom" : "Tesla Model 3",
+		"pro_description" : "Voiture électrique avec grande autonomie et conduite autonome",
+		"pro_prix" : 50000,
+		"pro_reference" : 2008,
+		"pro_quantite" : 4,
+		"pro_image" : "tesla_model3.jpg",
+		"com_date" : "2025-02-20",
+		"uti_id" : 1
+	},
+	{
+		"com_id" : 2,
+		"pro_id" : 3,
+		"pro_nom" : "Toyota Yaris",
+		"pro_description" : "Citadine économique et fiable, idéale pour la ville",
+		"pro_prix" : 15000,
+		"pro_reference" : 2001,
+		"pro_quantite" : 5,
+		"pro_image" : "toyota_yaris.jpg",
+		"com_date" : "2025-02-22",
+		"uti_id" : 2
+	},
+	{
+		"com_id" : 2,
+		"pro_id" : 4,
+		"pro_nom" : "Peugeot 208",
+		"pro_description" : "Compacte dynamique avec technologie embarquée avancée",
+		"pro_prix" : 18000,
+		"pro_reference" : 2002,
+		"pro_quantite" : 4,
+		"pro_image" : "peugeot_208.jpg",
+		"com_date" : "2025-02-22",
+		"uti_id" : 2
+	}
+]

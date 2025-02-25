@@ -1,0 +1,20 @@
+[
+	{
+		"uti_id" : 1,
+		"uti_mail" : "user1@example.com",
+		"uti_telephone" : "0601020304",
+		"uti_mdp" : "mdpHash1",
+		"uti_adresse" : "12 Rue des Lilas, Paris",
+		"com_id" : 1,
+		"com_date" : "2025-02-20"
+	},
+	{
+		"uti_id" : 2,
+		"uti_mail" : "user2@example.com",
+		"uti_telephone" : "0612345678",
+		"uti_mdp" : "mdpHash2",
+		"uti_adresse" : "34 Avenue Victor Hugo, Lyon",
+		"com_id" : 2,
+		"com_date" : "2025-02-22"
+	}
+]
