@@ -12,6 +12,17 @@ foreach ($json[1] as $value) {
 }
 // <p><span class='fw-bold'>Date de commande</span> : " . $date->format("d/m/Y") . "</p>";
 
+$data1 = file_get_contents("./Assets/json/produits_commande.json");
+$commande = json_decode($data1, true);
+
+foreach ($commande as $value) {
+    $date = new DateTimeImmutable($commande[2]["com_date"]);
+    if ($value["pro_nom"] == "Toyota Yaris") {
+        $userInfo .= "
+                    <p><span class='fw-bold'>Date de commande</span> : " . $date->format("d/m/Y") . "</p>";
+    }
+
+}
 
 ?>
 
