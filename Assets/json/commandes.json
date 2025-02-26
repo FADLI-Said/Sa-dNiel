@@ -1,8 +1,9 @@
 [
 	{
 		"uti_id" : 1,
+		"uti_name" : "Daniel",
 		"uti_mail" : "user1@example.com",
-		"uti_telephone" : "0601020304",
+		"uti_telephone" : "06.01.02.03.04",
 		"uti_mdp" : "mdpHash1",
 		"uti_adresse" : "12 Rue des Lilas, Paris",
 		"com_id" : 1,
@@ -10,8 +11,9 @@
 	},
 	{
 		"uti_id" : 2,
+		"uti_name" : "Saïd",
 		"uti_mail" : "user2@example.com",
-		"uti_telephone" : "0612345678",
+		"uti_telephone" : "06.12.34.56.78",
 		"uti_mdp" : "mdpHash2",
 		"uti_adresse" : "34 Avenue Victor Hugo, Lyon",
 		"com_id" : 2,

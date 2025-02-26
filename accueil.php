@@ -1,5 +1,7 @@
 <?php
 
+
+
 function getProducts()
 {
     $myCards = "";
@@ -7,19 +9,19 @@ function getProducts()
     $json = json_decode($data, true);
     foreach ($json as $key => $value) {
         $date = new DateTimeImmutable($value["date_sortie"]);
-        $myCards .= "<a class='m-4 p-2 max col-3 text-decoration-none'>
+        $myCards .= "<a class='m-4 p-2 max col-lg-3 col-10 text-decoration-none' href='./detail.php'>
                     <div class='card shadow p-3 mb-5 bg-body-tertiary rounded'>
         <p class='mb-3 text-uppercase'> " . $value["pro_nom"] . "</p>
         <div class='row'>
-            <div class='mb-3 col-7'>
+            <div class='mb-3 col-lg-7 col-10'>
                 <img src='./Assets/images/" . $value["pro_image"] . "' class='card-img-top'
-                    alt='...'>
+                    alt='Image de" . $value["pro_nom"] . "'>
             </div>
-            <div class='card-body col-3'>
-                <p class='card-text m-0 text-decoration-underline'><span class='fw-bold'>Énergie : </span>" . $value["energie"] . "</p>
-                <p class='card-text m-0 text-decoration-underline'><span class='fw-bold'>Année : </span>". $date->format('Y') . "  </p>
-                <p class='card-text m-0 text-decoration-underline'><span class='fw-bold'>Boîte : </span>" . $value["type_vehicule"] . "</p>
-                <p class='card-text m-0 text-decoration-underline'><span class='fw-bold'>Prix : </span>" . $value["pro_prix"] . " €</p>
+            <div class='card-body col-lg-3 col-10'>
+                <p class='card-text m-0'>" . $value["energie"] . "</p>
+                <p class='card-text m-0'><span class='fw-bold text-decoration-underline'>Année</span> : " . $date->format('Y') . "  </p>
+                <p class='card-text m-0'><span class='fw-bold text-decoration-underline'>Boîte</span> : " . $value["type_vehicule"] . "</p>
+                <p class='card-text m-0'><span class='fw-bold text-decoration-underline'>Prix</span> : " . $value["pro_prix"] . " €</p>
             </div>
         </div>
     </div>
@@ -44,9 +46,30 @@ function getProducts()
 </head>
 
 <body class="row justify-content-center m-0">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./accueil.php">SaïNiel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./accueil.php">Accueil</a>
+                    </li>
+                </ul>
+                <div class="border me-3 p-2">
+                    <a class="nav-link active" aria-current="page" href="./utilisateur.php"><i
+                            class="fa-solid fa-user"> Utilisateur</i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <h1 class="text-center">Concessionnaire : SaïNiel</h1>
     <?= getProducts() ?>
-
 
 
     <script src="https://kit.fontawesome.com/50a1934b21.js" crossorigin="anonymous"></script>

@@ -1,0 +1,30 @@
+[
+	{
+		"pro_id" : 3,
+		"avg(avi_note)" : 3.5000
+	},
+	{
+		"pro_id" : 4,
+		"avg(avi_note)" : 4.2500
+	},
+	{
+		"pro_id" : 5,
+		"avg(avi_note)" : 4.0000
+	},
+	{
+		"pro_id" : 7,
+		"avg(avi_note)" : 5.0000
+	},
+	{
+		"pro_id" : 10,
+		"avg(avi_note)" : 4.5000
+	},
+	{
+		"pro_id" : 11,
+		"avg(avi_note)" : 5.0000
+	},
+	{
+		"pro_id" : 12,
+		"avg(avi_note)" : 4.0000
+	}
+]

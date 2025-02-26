@@ -60,6 +60,42 @@
 		"avi_date" : "2025-02-24"
 	},
 	{
+		"pro_id" : 4,
+		"pro_nom" : "Peugeot 208",
+		"pro_description" : "Compacte dynamique avec technologie embarquée avancée",
+		"pro_prix" : 18000,
+		"pro_quantite" : 4,
+		"pro_image" : "peugeot_208.jpg",
+		"avi_id" : 23,
+		"avi_note" : 5,
+		"avi_texte" : "Excellente voiture, très confortable et économique.",
+		"avi_date" : "2024-01-15"
+	},
+	{
+		"pro_id" : 4,
+		"pro_nom" : "Peugeot 208",
+		"pro_description" : "Compacte dynamique avec technologie embarquée avancée",
+		"pro_prix" : 18000,
+		"pro_quantite" : 4,
+		"pro_image" : "peugeot_208.jpg",
+		"avi_id" : 24,
+		"avi_note" : 4,
+		"avi_texte" : "Bon véhicule, mais la consommation pourrait être améliorée.",
+		"avi_date" : "2024-02-10"
+	},
+	{
+		"pro_id" : 4,
+		"pro_nom" : "Peugeot 208",
+		"pro_description" : "Compacte dynamique avec technologie embarquée avancée",
+		"pro_prix" : 18000,
+		"pro_quantite" : 4,
+		"pro_image" : "peugeot_208.jpg",
+		"avi_id" : 25,
+		"avi_note" : 5,
+		"avi_texte" : "Très bonne tenue de route et design moderne !",
+		"avi_date" : "2024-02-20"
+	},
+	{
 		"pro_id" : 5,
 		"pro_nom" : "Renault Clio",
 		"pro_description" : "Voiture polyvalente avec un bon rapport qualité/prix",
