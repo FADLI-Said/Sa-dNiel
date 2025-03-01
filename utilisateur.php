@@ -9,8 +9,7 @@ foreach ($json[1] as $value) {
                     <p><span class='fw-bold'>Nom</span> : " . $json[1]["uti_name"] . "</p>
                     <p><span class='fw-bold'>Mail</span> : " . $json[1]["uti_mail"] . "</p>
                     <p><span class='fw-bold'>Mot de passe</span> : " . $json[1]["uti_mdp"] . "</p>
-                    <p><span class='fw-bold'>Téléphone</span> : " . $json[1]["uti_telephone"] . "</p>
-                    <p><span class='fw-bold'>Date d'inscription</span> : " . $date->format("d/m/Y") . "</p>";
+                    <p><span class='fw-bold'>Téléphone</span> : " . $json[1]["uti_telephone"] . "</p>";
 }
 
 $fmt = numfmt_create('fr_FR', NumberFormatter::CURRENCY);
@@ -58,14 +57,14 @@ foreach ($commande as $value) {
     <title>Utilisateurs</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/css/style.css">
 </head>
 
 
-<body>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<body id="detail">
+    <nav class="navbar navbar-expand-lg text-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="./accueil.php">SaïNiel</a>
+            <a class="navbar-brand text-light" href="./accueil.php">SaïNiel</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -73,7 +72,7 @@ foreach ($commande as $value) {
             <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./accueil.php">Accueil</a>
+                        <a class="nav-link active text-light" aria-current="page" href="./accueil.php">Accueil</a>
                     </li>
                 </ul>
                 <div class="border me-3 p-2">
@@ -84,11 +83,11 @@ foreach ($commande as $value) {
         </div>
     </nav>
 
-    <div class="mx-5 my-3 text-center border">
+    <div class="mx-5 my-3 text-center border text-light">
         <?= $userInfo ?>
     </div>
 
-    <div class="row shadow p-3 m-0 mb-5 bg-body-tertiary rounded">
+    <div class="row shadow p-3 mx-5 mb-5 text-light rounded" id="commande">
         <h1><var>1<sup>ère</sup> Commande</var></h1>
         <?= $myCommande ?>
         <a href='./commande.php' class='text-decoration-none col-4 text-center align-content-center'>Voir la commande <i

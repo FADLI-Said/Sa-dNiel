@@ -1,38 +1,13 @@
-<?php
-
-$data = file_get_contents("./Assets/json/produits.json");
-$json = json_decode($data, true);
-
-function getProducts()
-{
-    $myCards = "";
-    $data = file_get_contents("./Assets/json/produits.json");
-    $json = json_decode($data, true);
-    foreach ($json as $key => $value) {
-        $date = new DateTimeImmutable($value["date_sortie"]);
-        $myCards .= "
-                    <div class='col-3'>
-                <img src='Assets/images/" . $value["pro_image"] . "' alt='Image de" . $value["pro_nom"] . "'>
-                <h2 class='fs-6'>Voiture polyvalente avec un bon rapport qualité/prix</h2>
-                <button class='btn info'><a class='text-decoration-none text-light' href='detail.php'>+ d'Info</a></button>
-            </div>
-        ";
-    }
-    return $myCards;
-}
-?>
-
-
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voitures</title>
+    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="./Assets\css\style.css">
 </head>
 
 <body>
@@ -58,9 +33,9 @@ function getProducts()
         </div>
     </nav>
 
-    <div class="row m-0 justify-content-center pt-4 px-2" id="Accueil">
+    <div class="row m-0 justify-content-center pt-4" id="Accueil">
         <div class="col-6 text-light d-flex flex-column justify-content-center">
-            <h1><?= $json[9]["pro_nom"] ?></h1>
+            <h1>Tesla Model 3</h1>
             <p>La Tesla Model 3 est une berline électrique alliant performance, autonomie et technologie
                 avancée. Avec une
                 autonomie pouvant atteindre 600 km, elle se recharge rapidement via le réseau de Superchargeurs Tesla.
@@ -76,16 +51,19 @@ function getProducts()
                 <span class="border border-3 rounded-circle p-2"><i class="fa-regular fa-comment"></i></span>
             </p>
         </div>
-        <img src="./Assets/images/<?= $json[9]["pro_image"] ?>" alt="Image d'une tesla model 3"
-            class="col-6 rounded-circle fond">
+        <img src="https://www.pca-services.fr/wp-content/uploads/2020/07/tesla_24model3evsd1fb_angularfront.png"
+            alt="Image d'une tesla model 3" class="col-6 rounded-circle fond">
     </div>
 
     <div class="mb-5" id="card">
-        <div class="row px-5 mx-auto pt-4" id="card-content">
-            <?= getProducts() ?>
+        <div class="row px-5 mx-auto pt-4 container">
+            <div class="col-3">
+                <img src="https://pimdatacdn.bahco.com/media/sub978/16a847ebbf43d73f.png" alt="">
+                <h2 class="fs-6">Voiture polyvalente avec un bon rapport qualité/prix</h2>
+                <button class="btn"><a class="text-decoration-none text-light" href="detail.php">+ d'Info</a></button>
+            </div>
         </div>
     </div>
-
 
     <script src="https://kit.fontawesome.com/50a1934b21.js" crossorigin="anonymous"></script>
 </body>

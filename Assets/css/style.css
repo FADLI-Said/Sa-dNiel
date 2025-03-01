@@ -1,38 +1,117 @@
 .card {
-    overflow: hidden;
-    border-radius: 15px;
-    transition: all 0.5s ease;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.5s ease;
 }
 
 .card h2 {
-    color: #0ff;
-    font-size: 2rem;
-    position: relative;
-    z-index: 2;
+  color: #0ff;
+  font-size: 2rem;
+  position: relative;
+  z-index: 2;
 }
 
 .card::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(0deg,
-            transparent,
-            transparent 30%,
-            rgba(255, 0, 0, 0.3));
-    transform: rotate(-45deg);
-    transition: all 0.5s ease;
-    opacity: 0;
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent 30%,
+    rgba(255, 0, 0, 0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
 }
 
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
 }
 
 .card:hover::before {
-    opacity: 1;
-    transform: rotate(-45deg) translateY(100%);
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+nav,
+#close,
+#commande {
+  background-color: #233342;
+}
+
+#Accueil,
+#detail,
+.modal-content {
+  background-color: #5f7e8f;
+  /* border-bottom: solid; */
+}
+
+#Accueil .fond {
+  background-image: radial-gradient(
+    circle,
+    #ffffff,
+    #dbdce3,
+    #b3bbc7,
+    #8a9bac,
+    #5f7e8f
+  );
+}
+
+.Volant {
+  width: 20rem;
+}
+
+#card {
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    #5f7e8f,
+    #8a9bac,
+    #b3bbc7,
+    #dbdce3,
+    #ffffff
+  );
+}
+
+#card img {
+  width: 100%;
+  height: 100%;
+}
+
+#card .col-3 {
+  max-height: 15rem;
+  margin-bottom: 5rem;
+}
+
+.info,
+#note {
+  background-color: #233342 !important;
+  width: 100%;
+}
+
+.info:hover,
+#note:hover {
+  background-color: white !important;
+  transition: 0.5s;
+}
+
+.info:hover a,
+#note:hover {
+  color: #233342 !important;
+  transition: 0.5s;
+}
+
+#card-content {
+  width: 90%;
+}
+
+button a {
+  display: block;
+  width: 100%;
 }
