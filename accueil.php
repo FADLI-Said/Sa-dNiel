@@ -13,7 +13,7 @@ function getProducts()
         $myCards .= "
                     <div class='col-3'>
                 <img src='Assets/images/" . $value["pro_image"] . "' alt='Image de" . $value["pro_nom"] . "'>
-                <h2 class='fs-6'>Voiture polyvalente avec un bon rapport qualité/prix</h2>
+                <h2 class='fs-6'>" . $value["pro_description"] . "</h2>
                 <button class='btn info'><a class='text-decoration-none text-light' href='detail.php'>+ d'Info</a></button>
             </div>
         ";
