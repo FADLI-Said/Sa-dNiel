@@ -72,8 +72,8 @@ foreach ($categorie as $value) {
                     </li>
                 </ul>
                 <div class="border me-3 p-2">
-                    <a class="nav-link active" aria-current="page" href="./utilisateur.php"><i class="fa-solid fa-user">
-                            Utilisateur</i></a>
+                <a class="nav-link active" aria-current="page" href="./utilisateur.php"><i class="fa-solid fa-user me-2">
+                </i>Utilisateur</a>
                 </div>
             </div>
         </div>
